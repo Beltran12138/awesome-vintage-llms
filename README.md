@@ -57,7 +57,7 @@ A family of 4B-parameter models based on the **Qwen3** architecture, trained fro
 - 🤗 Organisation: [uzh-echist-org](https://huggingface.co/uzh-echist-org)
 - 📄 Pre-release notes: [ranke-4b/prerelease_notes.md](https://github.com/DGoettlich/history-llms/blob/main/ranke-4b/prerelease_notes.md)
 - 📝 Coverage: [byteiota — "History LLMs Train AI on Pre-1913 Texts to Kill Hindsight Bias"](https://byteiota.com/history-llms-train-ai-on-pre-1913-texts-to-kill-hindsight-bias/) · [GIGAZINE](https://gigazine.net/gsc_news/en/20251222-ranke-4b/)
-- 💬 Hacker News: [History LLMs: Models trained exclusively on pre-1913 texts](https://news.ycombinator.com/item?id=46319826) (897 points, 431 comments)
+- 💬 Hacker News: [History LLMs: Models trained exclusively on pre-1913 texts](https://news.ycombinator.com/item?id=46319826)
 
 ### Machina Mirabilis / GPT-1900 (2026)
 
@@ -90,7 +90,7 @@ The largest publicly released vintage LLM to date: a **13B-parameter** model tra
 - 📄 Announcement: [*Introducing talkie: a 13B vintage language model from 1930*](https://talkie-lm.com/introducing-talkie)
 - 🤗 Source models: [talkie-lm/talkie-1930-13b-base](https://huggingface.co/talkie-lm/talkie-1930-13b-base) · [talkie-lm/talkie-1930-13b-it](https://huggingface.co/talkie-lm/talkie-1930-13b-it) · [talkie-lm/talkie-web-13b-base](https://huggingface.co/talkie-lm/talkie-web-13b-base) (modern-comparison twin)
 - 📝 Coverage: [Benjamin Breen — "Are 'Vintage LLMs' the start of a new humanistic field?"](https://resobscura.substack.com/p/are-vintage-llms-the-start-of-a-new) · [Sesame Disk](https://sesamedisk.com/talkie-1930-vintage-language-model/) · [Let's Data Science](https://letsdatascience.com/news/talkie-releases-13b-vintage-language-model-trained-on-1930s-757bdb99)
-- 💬 Hacker News: [Talkie: a 13B vintage language model from 1930](https://news.ycombinator.com/item?id=47927903) (355 points, 125 comments)
+- 💬 Hacker News: [Talkie: a 13B vintage language model from 1930](https://news.ycombinator.com/item?id=47927903)
 
 ## Related reading
 
