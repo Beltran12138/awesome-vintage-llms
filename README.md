@@ -20,6 +20,7 @@ These models are interesting because they enable, among other things:
   - [Machina Mirabilis / GPT-1900 (2026)](#machina-mirabilis--gpt-1900-2026)
   - [Mr. Chatterbox (2026)](#mr-chatterbox-2026)
   - [Talkie-1930 (2026)](#talkie-1930-2026)
+  - [Ming Vintage (2026)](#ming-vintage-2026)
 - [Related reading](#related-reading)
 - [Contributing](#contributing)
 - [License](#license)
@@ -91,6 +92,14 @@ The largest publicly released vintage LLM to date: a **13B-parameter** model tra
 - 🤗 Source models: [talkie-lm/talkie-1930-13b-base](https://huggingface.co/talkie-lm/talkie-1930-13b-base) · [talkie-lm/talkie-1930-13b-it](https://huggingface.co/talkie-lm/talkie-1930-13b-it) · [talkie-lm/talkie-web-13b-base](https://huggingface.co/talkie-lm/talkie-web-13b-base) (modern-comparison twin)
 - 📝 Coverage: [Benjamin Breen — "Are 'Vintage LLMs' the start of a new humanistic field?"](https://resobscura.substack.com/p/are-vintage-llms-the-start-of-a-new) · [Sesame Disk](https://sesamedisk.com/talkie-1930-vintage-language-model/) · [Let's Data Science](https://letsdatascience.com/news/talkie-releases-13b-vintage-language-model-trained-on-1930s-757bdb99)
 - 💬 Hacker News: [Talkie: a 13B vintage language model from 1930](https://news.ycombinator.com/item?id=47927903)
+
+### Ming Vintage (2026)
+
+The first non-English from-scratch vintage LLM. A 29.74M-parameter char-level nanoGPT trained on 477M tokens of pre-1424 Classical Chinese (kanripo corpus: Buddhist canon, Confucian classics, historical texts). Uses character-level tokenization with a 31,344-char vocabulary — each Classical Chinese character carries independent semantic weight, making subword tokenization unsuitable. Trained as the **treatment arm** of a controlled experiment against a LoRA adapter on Qwen2.5-3B ([ming-vintage-qwen3b-lora](https://huggingface.co/Beltran12138/ming-vintage-qwen3b-lora), the control arm), demonstrating **zero world-model leakage by construction** — the 31,344-char vocabulary literally cannot generate tokens from other languages. The LoRA control, by contrast, exhibits a **multilingual backdoor**: rare-language tokens from the base model's 100+ language training data (Turkish, Arabic, Korean, programming terms) leak through the adapter into Classical Chinese output. Registered across 6 Classical Chinese registers (Buddhist sutra, Yijing commentary, historical annals, philosophical argumentation, commentarial gloss, textual criticism). Trained entirely on a Mac Mini M4 over ~6.5 hours — a weekend-scale proof-of-concept that the from-scratch vintage approach transfers across languages and scales.
+
+- 🤗 Source model: [Beltran12138/ming-vintage-scratch-30m](https://huggingface.co/Beltran12138/ming-vintage-scratch-30m)
+- 💻 GitHub: [Beltran12138/ming-vintage-llm](https://github.com/Beltran12138/ming-vintage-llm)
+- 🔬 Control arm: [Beltran12138/ming-vintage-qwen3b-lora](https://huggingface.co/Beltran12138/ming-vintage-qwen3b-lora) (LoRA adapter, same corpus)
 
 ## Related reading
 
